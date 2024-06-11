@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ep08-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ep08-frontend
+  template:
+    metadata:
+      labels:
+        app: ep08-frontend
+    spec:
+      containers:
+      - name: ep08-frontend
+        image: drkn1/scd-ass3:ep08-frontend
+        ports:
+        - containerPort: 80

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ep05-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ep05-frontend
+  template:
+    metadata:
+      labels:
+        app: ep05-frontend
+    spec:
+      containers:
+      - name: ep05-frontend
+        image: drkn1/scd-ass3:ep05-frontend
+        ports:
+        - containerPort: 80
