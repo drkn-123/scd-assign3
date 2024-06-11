@@ -1,0 +1,91 @@
+version: '3'
+services:
+  episode-01-frontend:
+    build: ./episode-01/fronted
+    ports:
+      - 3001:3000
+  episode-01-backend:
+    build: ./episode-01/backend
+    ports:
+      - 5001:5000
+
+  episode-04-frontend:
+    build: ./episode-04/fronted
+    ports:
+      - 3004:3000
+  episode-04-backend:
+    build: ./episode-04/backend
+    ports:
+      - 5004:5000
+
+  episode-06-frontend:
+    build: ./episode-06/fronted
+    ports:
+      - 3006:3000
+  episode-06-backend:
+    build: ./episode-06/backend
+    ports:
+      - 5006:5000
+
+  episode-08-frontend:
+    build: ./episode-08/fronted
+    ports:
+      - 3008:3000
+  episode-08-backend:
+    build: ./episode-08/backend
+    ports:
+      - 5008:5000
+
+  episode-09-frontend:
+    build: ./episode-09/fronted
+    ports:
+      - 3009:3000
+  episode-09-backend:
+    build: ./episode-09/backend
+    ports:
+      - 5009:5000
+
+  episode-10-frontend:
+    build: ./episode-10/fronted
+    ports:
+      - 3010:3000
+  episode-10-backend:
+    build: ./episode-10/backend
+    ports:
+      - 5010:5000
+
+  episode-02-frontend:
+    build: ./episode-02/fronted
+    ports:
+      - 3002:3000
+  episode-02-backend:
+    build: ./episode-02/backend
+    ports:
+      - 5002:5000
+
+  episode-03-frontend:
+    build: ./episode-03/fronted
+    ports:
+      - 3003:3000
+  episode-03-backend:
+    build: ./episode-03/backend
+    ports:
+      - 5003:5000
+
+  episode-05-frontend:
+    build: ./episode-05/fronted
+    ports:
+      - 3005:3000
+  episode-05-backend:
+    build: ./episode-05/backend
+    ports:
+      - 5005:5000
+
+  episode-07-frontend:
+    build: ./episode-07/fronted
+    ports:
+      - 3007:3000
+  episode-07-backend:
+    build: ./episode-07/backend
+    ports:
+      - 5007:5000
